@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SimasDei/nodejs-203/issues"
   },
-  "homepage": "https://github.com/SimasDei/nodejs-203#readme"
+  "homepage": "https://github.com/SimasDei/nodejs-203#readme",
+  "dependencies": {
+    "uuid": "^3.3.3"
+  }
 }
