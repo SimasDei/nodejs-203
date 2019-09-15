@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/SimasDei/nodejs-203#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "uuid": "^3.3.3"
   }
 }
