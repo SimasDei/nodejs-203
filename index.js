@@ -1,10 +1,18 @@
 const express = require('express');
 const path = require('path');
+const expressHb = require('express-handlebars');
 
+const logger = require('./middleware/logger');
+const members = require('./models/Members');
 
 const app = express();
-const logger = require('./middleware/logger');
+app.engine('handlebars', expressHb({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 
+app.get('/', (req, res) => res.render('index', {
+  title: 'Node-203 : Home',
+  members,
+}));
 
 // app.use(logger);
 app.use(express.json());
