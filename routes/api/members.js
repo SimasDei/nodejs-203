@@ -48,7 +48,7 @@ router.post('/', (req, res) => {
     members,
     success: true,
   };
-  return res.status(200).json(data);
+  return res.status(200).redirect('/');
 })
 
 /**
